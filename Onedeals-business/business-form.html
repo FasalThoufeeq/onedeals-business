@@ -340,6 +340,177 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script>
+      document
+        .getElementById("contact_email")
+        .addEventListener("blur", function () {
+          if (!validateEmailFormat()) {
+            // Display a toast message if the email format is invalid
+            Toastify({
+              text: "Please enter a valid email address",
+              duration: 3000, // Duration in milliseconds
+              gravity: "top", // Display position
+              position: "center",
+              backgroundColor: "linear-gradient(to right, #ff9800, #ff5722)", // Background color
+            }).showToast();
+            event.preventDefault();
+            return;
+          }
+        });
+      document
+        .getElementById("businessForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          validateEmailFormat();
+          if (!validateForm()) {
+            Toastify({
+              text: "Please fill in all the required fields",
+              duration: 3000,
+              gravity: "bottom",
+              position: "center",
+              backgroundColor: "linear-gradient(to right, #ff9800, #ff5722)",
+            }).showToast();
+            event.preventDefault();
+          } else {
+            event.preventDefault();
+            // var formData = new FormData(this);
+            var formDataObject = {};
+            var formElements = this.elements;
+            for (var i = 0; i < formElements.length; i++) {
+              var element = formElements[i];
+              var elementName = element.name;
+              var elementType = element.type;
+
+              // Handle different form elements
+              if (elementName) {
+                if (elementType === "checkbox") {
+                  // Handle checkboxes separately to get an array of selected values
+                  formDataObject[elementName] =
+                    formDataObject[elementName] || [];
+                  if (element.checked) {
+                    formDataObject[elementName].push(element.value);
+                  }
+                } else {
+                  // For other elements, simply get their values
+                  formDataObject[elementName] = element.value;
+                }
+              }
+            }
+            // formData.forEach(function (value, key) {
+            //   formDataObject[key] = value;
+            // });
+            console.log(formDataObject);
+
+            (function () {
+              emailjs.init("TK0VYQptcOwGw7Wih");
+            })();
+
+            let serviceID = "service_pjdp7jm";
+            let templateID = "template_7mq0rbj";
+            let params = {
+              company_name: formDataObject?.company_name,
+              industry: formDataObject?.industry,
+              subject: "Enquiry for MARKETING & BRANDING with requirements ",
+              business_address: formDataObject?.business_address,
+              contact_name: formDataObject?.contact_name,
+              contact_email: formDataObject?.contact_email,
+              contact_phone_number: formDataObject?.contact_phone_number,
+              company_website: formDataObject?.company_website
+                ? formDataObject?.company_website
+                : "Not Available",
+              marketing_goals: formDataObject?.marketing_goals,
+              brand_identity: formDataObject?.brand_identity,
+              current_marketing_strategies:
+                formDataObject?.current_marketing_strategies,
+              target_audience: formDataObject?.target_audience,
+              service_of_interest: formDataObject?.service_of_interest,
+              budget_allocation: formDataObject?.budget_allocation,
+              hear_about_us: formDataObject?.hear_about_us,
+              additional_comments: formDataObject?.additional_comments
+                ? formDataObject?.additional_comments
+                : "No Additional Comments",
+            };
+
+            emailjs.send(serviceID, templateID, params).then((res) => {
+              console.log("ooooo");
+              function showToast() {
+                Toastify({
+                  text: "Thank you for choosing us for your marketing and branding needs. We will get in touch with you shortly after reviewing your information.",
+                  duration: 3000,
+                  gravity: "bottom",
+                  position: "center",
+                  backgroundColor:
+                    "linear-gradient(to right, #00b09b, #96c93d)",
+                }).showToast();
+              }
+              showToast();
+            });
+          }
+        });
+
+      function validateForm() {
+        console.log("fffffffffffffffffffffffffff");
+        var company_name = document.getElementById("company_name").value;
+        var industry = document.getElementById("industry").value;
+        var contact_name = document.getElementById("contact_name").value;
+        var business_address =
+          document.getElementById("business_address").value;
+        var contact_email = document.getElementById("contact_email").value;
+        var marketing_goals = document.getElementById("marketing_goals").value;
+        var brand_identity = document.getElementById("brand_identity").value;
+        var current_marketing_strategies = document.getElementById(
+          "current_marketing_strategies"
+        ).value;
+        var target_audience = document.getElementById("target_audience").value;
+        var service_of_interest = document.getElementById(
+          "service_of_interest"
+        ).value;
+        var budget_allocation =
+          document.getElementById("budget_allocation").value;
+        var hear_about_us = document.getElementById("hear_about_us").value;
+
+        return (
+          company_name.trim() !== "" &&
+          industry.trim() !== "" &&
+          contact_name.trim() !== "" &&
+          business_address.trim() !== "" &&
+          contact_email.trim() !== "" &&
+          marketing_goals.trim() !== "" &&
+          brand_identity.trim() !== "" &&
+          current_marketing_strategies.trim() !== "" &&
+          target_audience.trim() !== "" &&
+          service_of_interest.trim() !== "" &&
+          budget_allocation.trim() !== "" &&
+          hear_about_us.trim() !== ""
+        );
+      }
+      function validateEmailFormat() {
+        var email = document.getElementById("contact_email").value;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        console.log(emailRegex.test(email));
+        return emailRegex.test(email);
+      }
+    </script>
+    <script>
+      document
+        .getElementById("downloadBrochure")
+        .addEventListener("click", function () {
+          var pdfPath = "./assets/pdf/brouchure.pdf";
+          var link = document.createElement("a");
+          link.href = pdfPath;
+          link.download = "brouchure.pdf";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+    </script>
 </body>
 
 </html>
