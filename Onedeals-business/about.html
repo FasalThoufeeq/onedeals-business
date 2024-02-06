@@ -379,5 +379,18 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+      document
+        .getElementById("downloadBrochure")
+        .addEventListener("click", function () {
+          var pdfPath = "./assets/pdf/brouchure.pdf";
+          var link = document.createElement("a");
+          link.href = pdfPath;
+          link.download = "brouchure.pdf";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+    </script>
   </body>
 </html>
