@@ -485,7 +485,7 @@ h6,
     color: var(--primary);
     background: var(--light);
     border-radius: 60px;
-    font-size: 22px;
+    font-size: 16px;
     transition: .5s;
 }
 
