@@ -27,6 +27,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/business-form.css">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -80,9 +81,174 @@
             </div>
         </div>
         <!-- Navbar & Hero End -->
+
+        <div
+        id="business-form"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        "
+      >
+        <h1 style="margin: 15px">MARKETING & BRANDING</h1>
+      </div>
+      <div class="container">
+        <div class="form-style-5">
+          <form id="businessForm">
+            <fieldset>
+              <legend><span class="number">1</span>Company Information:</legend>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      name="company_name"
+                      id="company_name"
+                      placeholder="Company Name *"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      name="industry"
+                      id="industry"
+                      placeholder="Industry *"
+                    />
+                  </div>
+  
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      name="business_address"
+                      id="business_address"
+                      placeholder="Business Address *"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      name="contact_name"
+                      id="contact_name"
+                      placeholder="Contact Name *"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      name="contact_email"
+                      id="contact_email"
+                      placeholder="Contact Email *"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      name="contact_phone_number"
+                      id="contact_phone_number"
+                      placeholder="Contact Phone Number *"
+                    />
+                  </div>
+                  <div class="col-lg-12">
+                    <input
+                      type="text"
+                      name="company_website"
+                      id="company_website"
+                      placeholder="Company Website (optional)"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <textarea
+                      name="marketing_goals"
+                      ,
+                      id="marketing_goals"
+                      placeholder="Briefly describe your marketing goals and objectives"
+                    ></textarea>
+                  </div>
+                  <div class="col-lg-6">
+                    <textarea
+                      name="brand_identity"
+                      id="brand_identity"
+                      placeholder="Briefly describe your brand identity and values"
+                    ></textarea>
+                  </div>
+                  <div class="col-lg-6">
+                    <textarea
+                      id="current_marketing_strategies"
+                      name="current_marketing_strategies"
+                      placeholder="Briefly describe your current marketing strategies and efforts"
+                    ></textarea>
+                  </div>
+                  <div class="col-lg-6">
+                    <textarea
+                      id="target_audience"
+                      name="target_audience"
+                      placeholder="Describe your target audience demographics and preferences"
+                    ></textarea>
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="service_of_interest">Services of Interest</label>
+                    <select id="service_of_interest" name="service_of_interest">
+                      <optgroup
+                        label="Please select the services you are interested in (Check all that apply)"
+                      >
+                        <option value="Branding">Branding</option>
+                        <option value="Digital Marketing">
+                          Digital Marketing
+                        </option>
+                        <option value="Social Media Management">
+                          Social Media Management
+                        </option>
+                        <option value="PhContent Creationone">
+                          Content Creation
+                        </option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Website Development">
+                          Website Development
+                        </option>
+                        <option value="Other">Other</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="budget_allocation">Budget Allocation</label>
+                    <input
+                      type="text"
+                      name="budget_allocation"
+                      id="budget_allocation"
+                      placeholder="Budget *"
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><span class="number">2</span> Additional Info</legend>
+              <div class="col-lg-12">
+                <label for="hear_about_us">How did you hear about us?</label>
+                <select id="hear_about_us" name="hear_about_us">
+                  <optgroup label="Please Select One">
+                    <option value="Online Advertisement">
+                      Online Advertisement
+                    </option>
+                    <option value="Referral">Referral</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Other">Other</option>
+                  </optgroup>
+                </select>
+              </div>
+              <textarea
+                name="additional_comments"
+                placeholder="Additional Comments/Requirements"
+              ></textarea>
+            </fieldset>
+            <input type="submit" value="Apply" />
+          </form>
+        </div>
+      </div>
         
 
-        <!-- Testimonial Start -->
+        <!-- Footer Start -->
         <div
         class="container-fluid bg-primary text-light footer wow fadeIn"
         data-wow-delay="0.1s"
@@ -154,56 +320,6 @@
           </div>
         </div>
       </div>
-        <!-- Testimonial End -->
-        
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-4">
-                        <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <p class="section-title text-white h5 mb-4">Newsletter<span></span></p>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="https://onedeals.cloud/">Onedeals</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="">DNT</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="#">Home</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Footer End -->
 
 
