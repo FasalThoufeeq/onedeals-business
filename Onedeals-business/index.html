@@ -2,190 +2,266 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Onedeals Business</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
+
+    <title>Onedeals Business</title>
     <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-    <!-- Favicon -->
-    <link href="img/logo/One Deals New Logo.png" rel="icon" />
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Favicons -->
+    <link href="assets/img/logo/One Deals New Logo.png" rel="icon" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+      href="assets/img/logo/One Deals New Logo.png"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div class="container-xxl bg-white p-0">
-      <!-- Spinner Start -->
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
       <div
-        id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        class="container d-flex justify-content-center justify-content-md-between"
       >
-        <div
-          class="spinner-grow text-primary"
-          style="width: 3rem; height: 3rem"
-          role="status"
-        >
-          <span class="sr-only">Loading...</span>
-        </div>
-      </div>
-      <!-- Spinner End -->
-
-      <!-- Navbar & Hero Start -->
-      <div class="container-xxl position-relative p-0">
-        <nav
-          class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
-        >
-          <a href="https://onedeals.co.in" class="navbar-brand p-0">
-            <!-- <h1 class="m-0">DGital</h1> -->
-            <img src="./img/logo/One Deals New Logo white.png" alt="Logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"
+            ><a href="#">support@onedeals.online</a></i
           >
-            <span class="fa fa-bars"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto py-0">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
-              <a href="about.html" class="nav-item nav-link">About</a>
-              <a href="service.html" class="nav-item nav-link">Service</a>
-              <a href="business-form.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="#" id="downloadBrochure" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Brochure</a>
-          </div>
-        </nav>
-
-        <div class="container-xxl bg-primary hero-header">
-          <div class="container px-lg-5">
-            <div class="row g-5 align-items-end">
-              <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="text-white mb-4 animated slideInDown">
-                  Experience Convenience, Experience One Deal
-                </h1>
-                <p class="text-white pb-3 animated slideInDown">
-                  Branding and marketing are essential components of any
-                  business strategy, including those employed by One Deal.
-                  Here's a detailed breakdown of how One Deal might approach
-                  business branding and marketing
-                </p>
-                <a
-                  href="business-form.html"
-                  class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight"
-                  >Register</a
-                >
-              </div>
-              <div class="col-lg-6 text-center text-lg-start">
-                <img
-                  class="img-fluid animated zoomIn"
-                  src="img/hero.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
+          <i class="bi bi-phone d-flex align-items-center ms-4"
+            ><span>+91 9072552100</span></i
+          >
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
-      <!-- Navbar & Hero End -->
+    </section>
 
-      <!-- Feature Start -->
-      <div class="container-xxl py-5">
-        <div class="container py-5 px-lg-5">
-          <div class="row g-4">
-            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="feature-item bg-light rounded text-center p-4">
-                <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
-                <h5 class="mb-3">Branding</h5>
-                <p class="m-0">
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- <h1 class="logo"><a href="index.html">BizLand<span>.</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="https://www.onedeals.co.in" class="logo"
+          ><img
+            src="assets/img/logo/One Deals New Logo blue crop (1).png"
+            alt=""
+        /></a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <!-- <li class="dropdown">
+              <a href="#"
+                ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Deep Drop Down</span>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li> -->
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <h1>Experience <span>Convenience</span></h1>
+        <h1>Experience <span>One Deal</span></h1>
+        <p>
+          Branding and marketing are essential components of any business
+          strategy,<br />
+          including those employed by One Deal. Here's a detailed breakdown of
+          how One Deal might approach business branding and marketing
+        </p>
+        <div class="d-flex">
+          <a href="businness-form.html" class="btn-get-started scrollto"
+            >Register</a
+          >
+          <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= Featured Services Section ======= -->
+      <section id="featured-services" class="featured-services">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon">
+                  <i class="bx bx-objects-vertical-bottom"></i>
+                </div>
+                <h4 class="title"><a href="">Branding</a></h4>
+                <p class="description">
                   Branding is the process of creating a unique identity and
                   perception for a company, product, or service in the minds of
                   consumers. It goes beyond just a logo or visual elements; it
                   encompasses the overall experience, values, and emotions
-                  associated with the brand.
+                  associated with the brand.
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="feature-item bg-light rounded text-center p-4">
-                <i class="fa fa-3x fa-search text-primary mb-4"></i>
-                <h5 class="mb-3">Marketing</h5>
-                <p class="m-0">
+
+            <div
+              class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon"><i class="bx bx-radio"></i></div>
+                <h4 class="title"><a href="">Marketing</a></h4>
+                <p class="description">
                   Marketing is the strategic process of promoting and selling
                   products or services to target customers. It involves
                   understanding customer needs and preferences, developing
-                  compelling offerings, and communicating value
-                  propositions effectively.
+                  compelling offerings, and communicating value propositions
+                  effectively.
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="feature-item bg-light rounded text-center p-4">
-                <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
-                <h5 class="mb-3">Advertising</h5>
-                <p class="m-0">
+
+            <div
+              class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon"><i class="bx bx-video-recording"></i></div>
+                <h4 class="title"><a href="">Advertising</a></h4>
+                <p class="description">
                   Advertising is a key component of marketing that involves the
                   creation and dissemination of promotional messages to target
-                  audiences with the aim of influencing their
-                  behavior or perceptions
+                  audiences with the aim of influencing their behavior or
+                  perceptions
                 </p>
-                <br />
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Feature End -->
+      </section>
+      <!-- End Featured Services Section -->
 
-      <!-- About Start -->
-      <div class="container-xxl py-5">
-        <div class="container py-5 px-lg-5">
-          <div class="row g-5 align-items-center">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-              <p class="section-title text-secondary">About Us<span></span></p>
-              <h1 class="mb-5">Digital solution with 12 years of experience</h1>
-              <p class="mb-4">
-                Having 12 years of experience in branding and marketing
-                positions One Deals as a seasoned player in the industry. Over
-                this period, One Deals has likely accumulated valuable insights,
-                honed its strategies, and adapted to evolving market trends.
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About</h2>
+            <h3>Elevate Your Brand with <span>One Deals</span></h3>
+            <p>
+              Welcome to One Deals, your premier destination for business
+              marketing and branding solutions
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h3>
+                Transform Your Marketing Strategy and Boost Your
+                Brand Visibility
+              </h3>
+              <p>
+                One Deals, we specialize in crafting tailored strategies to
+                effectively market your products and elevate your brand presence
+                across various platforms. Our mission is to help businesses of
+                all sizes thrive by maximizing their marketing efforts while
+                minimizing costs.With our innovative approach to marketing, we
+                streamline the process, saving you valuable time and resources.
+                <br />
+                <br />
+                Our goal is to help you achieve your marketing objectives
+                efficiently and effectively, enabling you to focus on what
+                matters most – growing your business.When it comes to branding,
+                we believe in the power of authenticity and creativity. Our team
+                of experts is dedicated to ensuring that your brand stands out
+                in today's competitive landscape.
+                <br />
+                <br />
+                We work closely with you to develop a unique brand identity that
+                resonates with your target audience and leaves a lasting
+                impression.At One Deals, we understand the importance of a
+                well-executed marketing and branding strategy. That's why we are
+                committed to delivering exceptional results that exceed your
+                expectations. Let us help you unlock the full potential of your
+                business and propel it to new heights.Partner with One Deals
+                today and experience the difference our expertise can make for
+                your brand. Together, we can create marketing and branding
+                solutions that drive growth and success.
               </p>
-              <div class="skill mb-4">
-                <div class="d-flex justify-content-between">
-                  <p class="mb-2">Branding</p>
-                  <p class="mb-2">85%</p>
-                </div>
-                <div class="progress">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+          <div class="row skills-content">
+            <div class="col-lg-12">
+              <div class="progress">
+                <span class="skill">Branding <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
                   <div
-                    class="progress-bar bg-primary"
+                    class="progress-bar"
                     role="progressbar"
                     aria-valuenow="85"
                     aria-valuemin="0"
@@ -193,14 +269,12 @@
                   ></div>
                 </div>
               </div>
-              <div class="skill mb-4">
-                <div class="d-flex justify-content-between">
-                  <p class="mb-2">Marketing</p>
-                  <p class="mb-2">90%</p>
-                </div>
-                <div class="progress">
+
+              <div class="progress">
+                <span class="skill">Marketing <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
                   <div
-                    class="progress-bar bg-secondary"
+                    class="progress-bar"
                     role="progressbar"
                     aria-valuenow="90"
                     aria-valuemin="0"
@@ -208,14 +282,12 @@
                   ></div>
                 </div>
               </div>
-              <div class="skill mb-4">
-                <div class="d-flex justify-content-between">
-                  <p class="mb-2">Advertising</p>
-                  <p class="mb-2">95%</p>
-                </div>
-                <div class="progress">
+
+              <div class="progress">
+                <span class="skill">Advertising <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
                   <div
-                    class="progress-bar bg-dark"
+                    class="progress-bar"
                     role="progressbar"
                     aria-valuenow="95"
                     aria-valuemin="0"
@@ -224,409 +296,645 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <img
-                class="img-fluid wow zoomIn"
-                data-wow-delay="0.5s"
-                src="img/about.png"
-              />
-            </div>
           </div>
         </div>
-      </div>
-      <!-- About End -->
+      </section>
+      <!-- End Skills Section -->
 
-      <!-- Facts Start -->
-      <div
-        class="container-xxl bg-primary fact py-5 wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
-        <div class="container py-5 px-lg-5">
-          <div class="row g-4">
-            <div
-              class="col-md-6 col-lg-3 text-center wow fadeIn"
-              data-wow-delay="0.1s"
-            >
-              <i class="fa fa-certificate fa-3x text-secondary mb-3"></i>
-              <h1 class="text-white mb-2" data-toggle="counter-up">12</h1>
-              <p class="text-white mb-0">Years Experience</p>
-            </div>
-            <div
-              class="col-md-6 col-lg-3 text-center wow fadeIn"
-              data-wow-delay="0.3s"
-            >
-              <i class="fa fa-users-cog fa-3x text-secondary mb-3"></i>
-              <h1 class="text-white mb-2" data-toggle="counter-up">26</h1>
-              <p class="text-white mb-0">Team Members</p>
-            </div>
-            <div
-              class="col-md-6 col-lg-3 text-center wow fadeIn"
-              data-wow-delay="0.5s"
-            >
-              <i class="fa fa-users fa-3x text-secondary mb-3"></i>
-              <h1 class="text-white mb-2" data-toggle="counter-up">135</h1>
-              <p class="text-white mb-0">Ongoing Project</p>
-            </div>
-            <div
-              class="col-md-6 col-lg-3 text-center wow fadeIn"
-              data-wow-delay="0.7s"
-            >
-              <i class="fa fa-check fa-3x text-secondary mb-3"></i>
-              <h1 class="text-white mb-2" data-toggle="counter-up">2762</h1>
-              <p class="text-white mb-0">Compleate Projects</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Facts End -->
-
-      <!-- Service Start -->
-      <div class="container-xxl py-5">
-        <div class="container py-5 px-lg-5">
-          <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <p class="section-title text-secondary justify-content-center">
-              <span></span>Our Services<span></span>
-            </p>
-            <h1 class="text-center mb-5">What Solutions We Provide</h1>
-          </div>
-          <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="service-item d-flex flex-column text-center rounded">
-                <div class="service-icon flex-shrink-0">
-                  <i class="fas fa-b"></i>
-                </div>
-                <h5 class="mb-3">Branding Strategy</h5>
-                <p class="m-0">
-                  Branding Strategy : Developing a cohesive brand identity,
-                  including logo design, brand messaging, and brand positioning.
-                </p>
-                <a class="btn btn-square" href=""
-                  ><i class="fa fa-arrow-right"></i
-                ></a>
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bx bx-award"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="12"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>Years Experience</p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item d-flex flex-column text-center rounded">
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-laptop-code fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Marketing Campaigns</h5>
-                <p class="m-0">
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+              <div class="count-box">
+                <i class="bi bi-people"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="26"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>Team Members</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+              <div class="count-box">
+                <i class="bx bxs-food-menu"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="135"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>Ongoing Project</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+              <div class="count-box">
+                <i class="bx bx-building"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="2762"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>Compleate Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Services</h2>
+            <h3>Check our <span>Services</span></h3>
+            <p>
+              One Deals, we offer a comprehensive range of services aimed at
+              empowering businesses to excel in today's competitive landscape.
+            </p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="">Branding Strategy</a></h4>
+                <p>
+                  Branding Strategy : Developing a cohesive brand identity,
+                  including logo design, brand messaging, and brand positioning.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4><a href="">Marketing Campaigns</a></h4>
+                <p>
                   Creating and executing marketing campaigns across various
                   channels such as digital advertising, social media, email
-                  marketing, and traditional media.
+                  marketing, and traditional media.
                 </p>
-                <a class="btn btn-square" href=""
-                  ><i class="fa fa-arrow-right"></i
-                ></a>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="service-item d-flex flex-column text-center rounded">
-                <div class="service-icon flex-shrink-0">
-                  <i class="fas fa-desktop fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Website Development and Design</h5>
-                <p class="m-0">
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="">Website Development and Design</a></h4>
+                <p>
                   Designing and developing user-friendly websites that reflect
-                  the brand's identity and engage visitors effectively.
+                  the brand's identity and engage visitors effectively.
                 </p>
-                <a class="btn btn-square" href=""
-                  ><i class="fa fa-arrow-right"></i
-                ></a>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="service-item d-flex flex-column text-center rounded">
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-mail-bulk fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Content Creation</h5>
-                <p class="m-0">
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4><a href="">Content Creation</a></h4>
+                <p>
                   Producing high-quality content, including blog posts,
                   articles, videos, and infographics, to engage and inform the
-                  target audience.
+                  target audience.
                 </p>
-                <a class="btn btn-square" href=""
-                  ><i class="fa fa-arrow-right"></i
-                ></a>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item d-flex flex-column text-center rounded">
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-search fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Search Engine Optimization (SEO)</h5>
-                <p class="m-0">
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-slideshow"></i></div>
+                <h4><a href="">Search Engine Optimization (SEO)</a></h4>
+                <p>
                   Optimizing website content and structure to improve visibility
-                  in search engine results and drive organic traffic.
+                  in search engine results and drive organic traffic.
                 </p>
-                <a class="btn btn-square" href=""
-                  ><i class="fa fa-arrow-right"></i
-                ></a>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item d-flex flex-column text-center rounded">
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-thumbs-up fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Social Media Management</h5>
-                <p class="m-0">
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-arch"></i></div>
+                <h4><a href="">Social Media Management</a></h4>
+                <p>
                   Managing social media accounts to build a strong online
-                  presence, interact with customers, and drive engagement
-                  and conversions.
+                  presence, interact with customers, and drive engagement and
+                  conversions.
                 </p>
-                <a class="btn btn-square" href=""
-                  ><i class="fa fa-arrow-right"></i
-                ></a>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="service-item d-flex flex-column text-center rounded">
-                <div class="service-icon flex-shrink-0">
-                  <i class="fab fa-android fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Pay-Per-Click (PPC) Advertising</h5>
-                <p class="m-0">
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4><a href="">Pay-Per-Click (PPC) Advertising</a></h4>
+                <p>
                   Managing paid advertising campaigns on platforms like Google
                   Ads and social media channels to increase brand visibility and
-                  drive targeted traffic.
+                  drive targeted traffic.
                 </p>
-                <a class="btn btn-square" href=""
-                  ><i class="fa fa-arrow-right"></i
-                ></a>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item d-flex flex-column text-center rounded">
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-thumbs-up fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Market Research and Analysis</h5>
-                <p class="m-0">
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4><a href="">Market Research and Analysis</a></h4>
+                <p>
                   Conducting market research to understand customer preferences,
-                  industry trends, and competitive landscape to inform
-                  marketing strategies.
+                  industry trends, and competitive landscape to inform marketing
+                  strategies.
                 </p>
-                <a class="btn btn-square" href=""
-                  ><i class="fa fa-arrow-right"></i
-                ></a>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item d-flex flex-column text-center rounded">
-                <div class="service-icon flex-shrink-0">
-                  <i class="fa fa-thumbs-up fa-2x"></i>
-                </div>
-                <h5 class="mb-3">Analytics and Reporting</h5>
-                <p class="m-0">
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4><a href="">Analytics and Reporting</a></h4>
+                <p>
                   Monitoring and analyzing marketing efforts to measure
                   performance, identify areas for improvement, and make
-                  data-driven decisions.
+                  data-driven decisions.
                 </p>
-                <a class="btn btn-square" href=""
-                  ><i class="fa fa-arrow-right"></i
-                ></a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Service End -->
+      </section>
+      <!-- End Services Section -->
 
-      <!-- Testimonial Start -->
-      <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5 px-lg-5">
-          <p class="section-title text-secondary justify-content-center">
-            <span></span>Testimonial<span></span>
-          </p>
-          <h1 class="text-center mb-5">What Say Our Clients!</h1>
-          <div class="owl-carousel testimonial-carousel">
-            <div class="testimonial-item bg-light rounded my-4">
-              <p>
-                <i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i
-                >I've been working with One Deals Business Marketing Company for
-                over a year now, and I can confidently say they've transformed
-                the way we approach marketing. Their team's strategic insights
-                and innovative campaigns have significantly boosted our brand
-                visibility and customer engagement. Not only have they delivered
-                results, but they've also been responsive and adaptable to our
-                evolving needs. I highly recommend ONE DEALS to any business
-                looking to elevate their marketing game
-              </p>
-              <div class="d-flex align-items-center">
-                  <!-- <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 65px; height: 65px" /> -->
-                  <i class="bi bi-person-fill ms-3" style="font-size: 2rem"></i>
-                <div class="ps-4">
-                  <h5 class="mb-1">Abilash</h5>
-                  <span>CEO of Heaven Dine Restaurant</span>
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="zoom-in">
+          <div
+            class="testimonials-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img
+                    src="assets/img/testimonials/testimonials-1.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  /> -->
+                  <i class="bi bi-person-fill" style="font-size: 3rem"></i>
+                  <h3>Abilash</h3>
+                  <h4>CEO of Heaven Dine Restaurant</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    I've been working with One Deals Business Marketing Company
+                    for over a year now, and I can confidently say they've
+                    transformed the way we approach marketing. Their team's
+                    strategic insights and innovative campaigns have
+                    significantly boosted our brand visibility and customer
+                    engagement. Not only have they delivered results, but
+                    they've also been responsive and adaptable to our evolving
+                    needs. I highly recommend ONE DEALS to any business looking
+                    to elevate their marketing game
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
                 </div>
               </div>
-            </div>
-            <div class="testimonial-item bg-light rounded my-4">
-              <p>
-                <i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>I
-                couldn't be happier with the results I've seen since partnering
-                with One Deals. Their expertise in digital marketing has helped
-                us reach new heights in customer acquisition and brand
-                recognition. The team at One Deals is not just knowledgeable;
-                they genuinely care about our success and go above and beyond to
-                ensure we're getting the best ROI possible. I'm grateful to have
-                found such a reliable partner in growing our business
-              </p>
-              <br />
-              <div class="d-flex align-items-center">
-                <!-- <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-2.jpg"
-                  style="width: 65px; height: 65px"
-                /> -->
-                <i class="bi bi-person-fill ms-3" style="font-size: 2rem"></i>
-                <div class="ps-4">
-                  <h5 class="mb-1">Kiran Nair</h5>
-                  <span>Founder of Cloud Kitchen</span>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img
+                    src="assets/img/testimonials/testimonials-2.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  /> -->
+                  <i class="bi bi-person-fill" style="font-size: 3rem"></i>
+                  <h3>Kiran Nair</h3>
+                  <h4>Founder of Cloud Kitchen</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    I couldn't be happier with the results I've seen since
+                    partnering with One Deals. Their expertise in digital
+                    marketing has helped us reach new heights in customer
+                    acquisition and brand recognition. The team at One Deals is
+                    not just knowledgeable; they genuinely care about our
+                    success and go above and beyond to ensure we're getting the
+                    best ROI possible. I'm grateful to have found such a
+                    reliable partner in growing our business
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
                 </div>
               </div>
-            </div>
-            <div class="testimonial-item bg-light rounded my-4">
-              <p>
-                <i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i
-                >I've been blown away by the level of expertise and dedication
-                shown by One Deals. Their tailored strategies have helped us
-                connect with our target audience in ways we never thought
-                possible. From social media campaigns to SEO optimization,
-                they've guided us every step of the way, resulting in
-                significant growth and brand recognition. Working with One Deals
-                has been a game-changer for our business, and I highly recommend
-                their services to anyone serious about taking their marketing to
-                the next level
-              </p>
-              <div class="d-flex align-items-center">
-                <!-- <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-3.jpg"
-                  style="width: 65px; height: 65px"
-                /> -->
-                <i class="bi bi-person-fill ms-3" style="font-size: 2rem"></i>
-                <div class="ps-4">
-                  <h5 class="mb-1">Drishya</h5>
-                  <span>Marketing Director at Drishya Education Academy</span>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img
+                    src="assets/img/testimonials/testimonials-3.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  /> -->
+                  <i class="bi bi-person-fill" style="font-size: 3rem"></i>
+                  <h3>Drishya</h3>
+                  <h4>Marketing Director at Drishya Education Academy</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    I've been blown away by the level of expertise and
+                    dedication shown by One Deals. Their tailored strategies
+                    have helped us connect with our target audience in ways we
+                    never thought possible. From social media campaigns to SEO
+                    optimization, they've guided us every step of the way,
+                    resulting in significant growth and brand recognition.
+                    Working with One Deals has been a game-changer for our
+                    business, and I highly recommend their services to anyone
+                    serious about taking their marketing to the next level
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
                 </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+
+      <!-- ======= Frequently Asked Questions Section ======= -->
+      <section id="faq" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>F.A.Q</h2>
+            <h3>Frequently Asked <span>Questions</span></h3>
+            <p>
+              Depth Analysis of Marketing Strategies, Uncovering Insights,
+              Trends, and Best Practices for Comprehensive Review. Explore
+              Various Tactics and Approaches to Enhance Market Presence and
+              Achieve Sustainable Growth in Today's Competitive
+              Business Environment
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <ul class="faq-list">
+                <li>
+                  <div
+                    data-bs-toggle="collapse"
+                    class="collapsed question"
+                    href="#faq1"
+                  >
+                    What services does One Deals offer?
+                    <i class="bi bi-chevron-down icon-show"></i
+                    ><i class="bi bi-chevron-up icon-close"></i>
+                  </div>
+                  <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                      One Deals offers a comprehensive range of marketing and
+                      branding services tailored to meet the unique needs of
+                      businesses. These services include branding strategy
+                      development, digital marketing campaigns, social media
+                      management, content creation, graphic design, website
+                      development, and more
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    data-bs-toggle="collapse"
+                    href="#faq2"
+                    class="collapsed question"
+                  >
+                    How does One Deals differentiate itself from other marketing
+                    agencies? <i class="bi bi-chevron-down icon-show"></i
+                    ><i class="bi bi-chevron-up icon-close"></i>
+                  </div>
+                  <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                      One Deals distinguishes itself through its personalized
+                      approach to each client, focusing on understanding their
+                      specific goals, target audience, and industry dynamics.
+                      Our team combines creativity with data-driven insights to
+                      deliver effective and measurable results for our clients,
+                      ensuring their brand stands out in a crowded marketplace
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    data-bs-toggle="collapse"
+                    href="#faq3"
+                    class="collapsed question"
+                  >
+                    Can One Deals help a small business with limited budget and
+                    resources? <i class="bi bi-chevron-down icon-show"></i
+                    ><i class="bi bi-chevron-up icon-close"></i>
+                  </div>
+                  <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                      Absolutely! One Deals understands the challenges that
+                      small businesses face, especially regarding budget and
+                      resources. We offer flexible packages and scalable
+                      solutions tailored to fit the budget constraints and
+                      unique requirements of small businesses. Whether it's
+                      launching a social media campaign, revamping a website, or
+                      creating compelling content, we strive to maximize value
+                      within budgetary limitations
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    data-bs-toggle="collapse"
+                    href="#faq4"
+                    class="collapsed question"
+                  >
+                    How does One Deals approach branding strategy development?
+                    <i class="bi bi-chevron-down icon-show"></i
+                    ><i class="bi bi-chevron-up icon-close"></i>
+                  </div>
+                  <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                      At One Deals, we believe that a strong branding strategy
+                      is the foundation of a successful business. We begin by
+                      conducting in-depth research to understand our client's
+                      industry, target audience, competitors, and market trends.
+                      Based on this analysis, we work closely with our clients
+                      to define their brand identity, messaging, values, and
+                      positioning. Our goal is to create a cohesive and
+                      memorable brand experience that resonates with the target
+                      audience and sets our clients apart from the competition
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    data-bs-toggle="collapse"
+                    href="#faq5"
+                    class="collapsed question"
+                  >
+                    What industries does One Deals specialize in?
+                    <i class="bi bi-chevron-down icon-show"></i
+                    ><i class="bi bi-chevron-up icon-close"></i>
+                  </div>
+                  <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                      One Deals has experience working with clients across
+                      various industries, including technology, healthcare,
+                      retail, hospitality, finance, and more. Our diverse
+                      portfolio demonstrates our ability to adapt our strategies
+                      and creative solutions to meet the unique challenges and
+                      opportunities present in different sectors
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    data-bs-toggle="collapse"
+                    href="#faq6"
+                    class="collapsed question"
+                  >
+                    How does One Deals measure the success of its marketing
+                    campaigns?
+                    <i class="bi bi-chevron-down icon-show"></i
+                    ><i class="bi bi-chevron-up icon-close"></i>
+                  </div>
+                  <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                      One Deals employs a variety of metrics and key performance
+                      indicators (KPIs) to measure the success of our marketing
+                      campaigns. These may include website traffic, engagement
+                      rates, conversion rates, lead generation, brand awareness,
+                      return on investment (ROI), and customer acquisition cost
+                      (CAC). By analyzing these metrics, we can evaluate the
+                      effectiveness of our strategies, identify areas for
+                      improvement, and refine our approach to deliver optimal
+                      results for our clients
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Frequently Asked Questions Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <h3><span>Contact Us</span></h3>
+            <p>
+              Your direct line to customer support, inquiries, and feedback.
+              Reach out for assistance, questions, or suggestions today
+            </p>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6">
+              <div class="info-box mb-4">
+                <i class="bx bx-map"></i>
+                <h3>Our Locations</h3>
+                <p>Kerala, Tamil Nadu, Karnataka</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="info-box mb-4">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Us</h3>
+                <p>support@onedeals.online</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="info-box mb-4">
+                <i class="bx bx-phone-call"></i>
+                <h3>Call Us</h3>
+                <p>+91 9072552100</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Testimonial End -->
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
 
-      <!-- Footer Start -->
-      <div
-        class="container-fluid bg-primary text-light footer wow fadeIn"
-        data-wow-delay="0.1s"
-      >
-        <div class="container py-5 px-lg-5">
-          <div class="row g-5">
-            <div class="col-md-6 col-lg-4">
-              <p class="section-title text-white h5 mb-4">
-                Address<span></span>
-              </p>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <a href="index.html" class="logo"
+                ><img
+                  src="assets/img/logo/One Deals New Logo blue crop (1).png"
+                  alt=""
+                  style="width: 50px; height: 50px"
+              /></a>
               <p>
-                <i class="fa fa-map-marker-alt me-3"></i>Kerala, Tamil Nadu,
-                Karnataka
+                Kerala, Tamil Nadu, Karnataka <br />
+                <strong>Phone:</strong> +91 9072552100<br />
+                <strong>Email:</strong> support@onedeals.online<br />
               </p>
-              <p><i class="fa fa-phone-alt me-3"></i>+91 9072552100</p>
-              <p><i class="fa fa-envelope me-3"></i>support@onedeals.online</p>
-              <div class="d-flex pt-2">
-                <a class="btn btn-outline-light btn-social" href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="btn btn-outline-light btn-social" href=""
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a class="btn btn-outline-light btn-social" href=""
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-              <p class="section-title text-white h5 mb-4">
-                Quick Link<span></span>
-              </p>
-              <a class="btn btn-link" href="">About Us</a>
-              <a class="btn btn-link" href="">Contact Us</a>
-              <a class="btn btn-link" href="">Privacy Policy</a>
-              <a class="btn btn-link" href="">Terms & Condition</a>
-              <a class="btn btn-link" href="">Career</a>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#hero">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#about">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
-            <div class="col-md-6 col-lg-4">
-              <p class="section-title text-white h5 mb-4">
-                Newsletter<span></span>
-              </p>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
               <p>
                 Marketing for OneDeals businesses can encompass various
                 strategies depending on the nature of the business, target
                 audience, and goals. Here are some general marketing strategies
-                that OneDeals businesses can consider
+                that OneDeals businesses can consider
               </p>
-            </div>
-          </div>
-        </div>
-        <div class="container px-lg-5">
-          <div class="copyright">
-            <div class="row">
-              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy;
-                <a class="border-bottom" href="https://onedeals.cloud/"
-                  >Onedeals</a
-                >, All Right Reserved.
-
-                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                Designed By <a class="border-bottom" href="">DNT</a>
-              </div>
-              <div class="col-md-6 text-center text-md-end">
-                <div class="footer-menu">
-                  <a href="#">Home</a>
-                </div>
-              </div>
+              <!-- <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div> -->
             </div>
           </div>
         </div>
       </div>
-      <!-- Footer End -->
 
-      <!-- Back to Top -->
-      <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"
-        ><i class="bi bi-arrow-up"></i
-      ></a>
-    </div>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Onedeals</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script>
-      document
-        .getElementById("downloadBrochure")
-        .addEventListener("click", function () {
-          var pdfPath = "./assets/pdf/brouchure.pdf";
-          var link = document.createElement("a");
-          link.href = pdfPath;
-          link.download = "brouchure.pdf";
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        });
-    </script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
