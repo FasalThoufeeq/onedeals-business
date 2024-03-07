@@ -109,23 +109,23 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #fff;
+  background: #106eea;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
-  color: #106eea;
+  color: #fff;
   padding: 0;
 }
 
 #topbar .contact-info i {
   font-style: normal;
-  color: #106eea;
+  color: #fff;
 }
 
 #topbar .contact-info i a,
 #topbar .contact-info i span {
   padding-left: 5px;
-  color: #106eea;
+  color: #fff;
 }
 
 #topbar .contact-info i a {
@@ -135,26 +135,26 @@ h6 {
 }
 
 #topbar .contact-info i a:hover {
-  color: #106eea;
+  color: #fff;
   text-decoration: underline;
 }
 
 #topbar .social-links a {
-  color: #106eea;
+  color: #fff;
   line-height: 0;
   transition: 0.3s;
   margin-left: 20px;
 }
 
 #topbar .social-links a:hover {
-  color: #106eea;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #106eea;
+  background: rgba(255, 255, 255, 0);
   transition: all 0.5s;
   z-index: 997;
   height: 86px;
@@ -184,7 +184,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 100px;
+  max-height: 75px;
 }
 
 .scrolled-offset {
@@ -226,7 +226,7 @@ h6 {
   padding: 0 3px;
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
+  color: #106eea;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
